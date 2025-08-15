@@ -1,0 +1,91 @@
+.todo-list {
+  width: 100%;
+}
+
+.todo-stats {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stat {
+  font-size: 14px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat strong {
+  color: #334155;
+  font-size: 16px;
+}
+
+.todos {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.todos::-webkit-scrollbar {
+  width: 6px;
+}
+
+.todos::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.todos::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.todos::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #64748b;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #475569;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+  .todo-stats {
+    gap: 16px;
+    padding: 12px 16px;
+  }
+  
+  .stat {
+    font-size: 13px;
+  }
+  
+  .stat strong {
+    font-size: 15px;
+  }
+  
+  .empty-state {
+    padding: 3rem 1rem;
+  }
+  
+  .empty-state h3 {
+    font-size: 1.25rem;
+  }
+}
